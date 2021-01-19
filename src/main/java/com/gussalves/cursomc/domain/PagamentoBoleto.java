@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import com.gussalves.cursomc.domain.enums.EstadoPagamento;
 
@@ -11,7 +13,10 @@ import com.gussalves.cursomc.domain.enums.EstadoPagamento;
 public class PagamentoBoleto extends Pagamento implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	@Temporal(TemporalType.DATE)
 	private Date dataVencimento;
+	
+	@Temporal(TemporalType.DATE)
 	private Date dataPagamento;
 	
 	public PagamentoBoleto() {
