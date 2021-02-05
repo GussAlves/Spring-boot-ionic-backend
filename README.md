@@ -1,6 +1,6 @@
-# Curso Spring-boot
+# readme
 
-Um dos projetos apresentados durante o curso para fixação de conhecimento, nele criamos uma API com Spring e utilizamos o banco de dados H2; 
+..list 
 
 # Projeto 
 
